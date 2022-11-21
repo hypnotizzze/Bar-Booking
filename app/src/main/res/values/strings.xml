@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bar Booking</string>
+    <string name="button_enter">Enter</string>
+    <string name="login_string">Login/Number/Mail</string>
+    <string name="password_string">Password</string>
+    <string name="forgot_enter_data_1">Forgot your login details?</string>
+    <string name="forgot_enter_data_2">Help with logging in</string>
+    <string name="register_1">Don\'t have an account yet?</string>
+    <string name="register_2">Registration</string>
+    <string name="register_3">Register</string>
+    <string name="already_register_1">Already have an account?</string>
+    <string name="already_register_2">Log in to the system</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="repeat_password">Repeat password</string>
+</resources>

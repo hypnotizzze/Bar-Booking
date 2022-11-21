@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Bar Booking</string>
+  <string name="button_enter">Войти</string>
+  <string name="login_string">Логин/Телефон/Почта</string>
+  <string name="password_string">Пароль</string>
+  <string name="forgot_enter_data_1">Забыли данные для входа?</string>
+  <string name="forgot_enter_data_2">Помощь со входом в систему</string>
+  <string name="register_1">Ещё нет аккаунта?</string>
+  <string name="register_2">Регистрация</string>
+  <string name="register_3">Зарегистрироваться</string>
+  <string name="already_register_1">Уже есть аккаунт?</string>
+  <string name="already_register_2">Войти в систему</string>
+  <string name="name">Имя</string>
+  <string name="surname">Фамилия</string>
+  <string name="repeat_password">Повторите пароль</string>
+</resources>
