@@ -4,11 +4,6 @@ import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -27,6 +22,11 @@ class MainActivity : AppCompatActivity() {
       startActivity(intent)
     }
 
+    enter_button_1.setOnClickListener {
+      val intent = Intent(this, Search_Bar_Activity::class.java)
+      startActivity(intent)
+    }
+
     val animationDrawable = constraintLayout.background as AnimationDrawable
     animationDrawable.apply {
       setEnterFadeDuration(1000)
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     //setSupportActionBar(toolbar)
 
     LoginInput_1 = findViewById(R.id.text_input_edit_login_1)
-    PasswordInput_1 = findViewById(R.id.text_input_edit_password_1)
+    PasswordInput_1 = findViewById(R.id.text_input_edit_search)
 
   }
 }

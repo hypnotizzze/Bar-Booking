@@ -10,6 +10,12 @@
       android:supportsRtl="true"
       android:theme="@style/Theme.BarBooking">
         <activity
+          android:name=".Search_Bar_Activity"
+          android:exported="false" />
+        <activity
+          android:name=".ChangePasswordActivity"
+          android:exported="false" />
+        <activity
           android:name=".RegisterActivity"
           android:exported="false" />
         <activity
