@@ -14,7 +14,6 @@
   <string name="name">Имя</string>
   <string name="surname">Фамилия</string>
   <string name="repeat_password">Повторите пароль</string>
-
   <string name="old_password">Старый пароль</string>
   <string name="new_password">Новый пароль</string>
   <string name="confirm_password">Подтвердить смену пароля</string>

@@ -74,9 +74,9 @@
     android:layout_marginStart="25dp"
     android:layout_marginTop="15dp"
     android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="15dp"
     android:scaleType="fitCenter"
-    app:layout_constraintBottom_toTopOf="@id/vertical_scroll_cards_layout"
+    app:layout_constraintBottom_toTopOf="@+id/vertical_scroll_cards_layout"
     app:layout_constraintEnd_toStartOf="@+id/horizontal_chip_group"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/text_input_search_layout"
@@ -89,9 +89,9 @@
     android:layout_marginStart="15dp"
     android:layout_marginTop="15dp"
     android:layout_marginEnd="25dp"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="15dp"
     android:scrollbars="none"
-    app:layout_constraintBottom_toTopOf="@id/vertical_scroll_cards_layout"
+    app:layout_constraintBottom_toTopOf="@+id/vertical_scroll_cards_layout"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toEndOf="@+id/more_button_search"
     app:layout_constraintTop_toBottomOf="@+id/text_input_search_layout">
@@ -109,38 +109,38 @@
           android:id="@+id/chip1"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example1" />
+          android:text="Спорт-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip2"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example2" />
+          android:text="Диско-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example3" />
+          android:text="Караоке-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip4"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example4" />
+          android:text="Винный бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip5"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example5" />
+          android:text="Кофейный бар" />
       </com.google.android.material.chip.ChipGroup>
     </LinearLayout>
   </HorizontalScrollView>
 
   <ScrollView
     android:id="@+id/vertical_scroll_cards_layout"
-    android:layout_width="0dp"
+    android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_marginStart="25dp"
     android:layout_marginEnd="25dp"
@@ -148,15 +148,12 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/horizontal_chip_group">
+    app:layout_constraintTop_toBottomOf="@+id/horizontal_chip_group">
 
     <LinearLayout
       android:id="@+id/bar_cards_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:layout_marginStart="25dp"
-      android:layout_marginEnd="25dp"
-      android:layout_marginBottom="5dp"
       android:orientation="vertical"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
