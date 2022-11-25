@@ -13,4 +13,6 @@
     <color name="dull_green_2">#C3F9C4</color>
     <color name="background_enter_button">#97E5C0</color>
     <color name="button_text_color">#4B4D4C</color>
+    <color name="button_personal_data_color">#6C9AC5</color>
+    <color name="background_activity_window">#D8B6F2</color>
 </resources>

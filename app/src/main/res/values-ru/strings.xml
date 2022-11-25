@@ -2,7 +2,7 @@
 <resources>
   <string name="app_name">Bar Booking</string>
   <string name="button_enter">Войти</string>
-  <string name="login_string">Логин/Телефон/Почта</string>
+  <string name="login_string">Номер телефона</string>
   <string name="password_string">Пароль</string>
   <string name="forgot_enter_data_1">Забыли данные для входа?</string>
   <string name="forgot_enter_data_2">Помощь со входом в систему</string>
@@ -20,4 +20,9 @@
   <string name="cancel">Отменить</string>
   <string name="search">Поиск</string>
   <string name="example">Пример</string>
+  <string name="return_b">Вернуться</string>
+  <string name="edit_profile">Редактировать профиль</string>
+  <string name="change_password">Изменить пароль</string>
+  <string name="exit">Выйти</string>
+  <string name="password_changed">Пароль успешно сменён</string>
 </resources>

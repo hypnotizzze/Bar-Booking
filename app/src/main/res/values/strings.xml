@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Bar Booking</string>
     <string name="button_enter">Enter</string>
-    <string name="login_string">Login/Number/Mail</string>
+    <string name="login_string">Phone Number</string>
     <string name="password_string">Password</string>
     <string name="forgot_enter_data_1">Forgot your login details?</string>
     <string name="forgot_enter_data_2">Help with logging in</string>
@@ -19,5 +19,9 @@
     <string name="cancel">Cancel</string>
     <string name="search">Search</string>
     <string name="example">Example</string>
-
+    <string name="return_b">Return</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change password</string>
+    <string name="exit">Exit</string>
+    <string name="password_changed">Password has been successfully changed</string>
 </resources>
