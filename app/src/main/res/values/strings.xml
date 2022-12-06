@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Bar Booking</string>
+    <string name="button_enter">Enter</string>
+    <string name="login_string">Phone Number</string>
+    <string name="password_string">Password</string>
+    <string name="forgot_enter_data_1">Forgot your login details?</string>
+    <string name="forgot_enter_data_2">Help with logging in</string>
+    <string name="register_1">Don\'t have an account yet?</string>
+    <string name="register_2">Registration</string>
+    <string name="register_3">Register</string>
+    <string name="already_register_1">Already have an account?</string>
+    <string name="already_register_2">Log in to the system</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password change</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="example">Example</string>
+    <string name="return_b">Return</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change password</string>
+    <string name="exit">Exit</string>
+    <string name="password_changed">Password has been successfully changed</string>
+    <string name="bar_name_1">АРКА</string>
+    <string name="adr_1">Большая Конюшенная ул, 27</string>
+    <string name="book_1">Забронировать</string>
+    <string name="time_1">Сегодня до 02:00</string>
+</resources>

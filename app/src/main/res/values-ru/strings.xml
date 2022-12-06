@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Bar Booking</string>
+  <string name="button_enter">Войти</string>
+  <string name="login_string">Номер телефона</string>
+  <string name="password_string">Пароль</string>
+  <string name="forgot_enter_data_1">Забыли данные для входа?</string>
+  <string name="forgot_enter_data_2">Помощь со входом в систему</string>
+  <string name="register_1">Ещё нет аккаунта?</string>
+  <string name="register_2">Регистрация</string>
+  <string name="register_3">Зарегистрироваться</string>
+  <string name="already_register_1">Уже есть аккаунт?</string>
+  <string name="already_register_2">Войти в систему</string>
+  <string name="name">Имя</string>
+  <string name="surname">Фамилия</string>
+  <string name="repeat_password">Повторите пароль</string>
+  <string name="old_password">Старый пароль</string>
+  <string name="new_password">Новый пароль</string>
+  <string name="confirm_password">Подтвердить смену пароля</string>
+  <string name="cancel">Отменить</string>
+  <string name="search">Поиск</string>
+  <string name="example">Пример</string>
+  <string name="return_b">Вернуться</string>
+  <string name="edit_profile">Редактировать профиль</string>
+  <string name="change_password">Изменить пароль</string>
+  <string name="exit">Выйти</string>
+  <string name="password_changed">Пароль успешно сменён</string>
+  <string name="bar_name_1">АРКА</string>
+  <string name="adr_1">Большая Конюшенная ул, 27</string>
+  <string name="book_1">Забронировать</string>
+  <string name="time_1">Сегодня до 02:00</string>
+</resources>

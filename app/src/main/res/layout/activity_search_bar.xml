@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/purple_200"
+  tools:context=".Search_Bar_Activity">
+
+
+  <TextView
+    android:id="@+id/app_name_search_activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/app_name"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/personal_account_logo"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="10dp"
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toTopOf="@+id/text_input_search_layout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/user" />
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/text_input_search_layout"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="25dp"
+    android:gravity="center_vertical"
+    android:hint="@string/search"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/personal_account_logo"
+    app:startIconDrawable="@drawable/ic_baseline_search_24">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/text_input_edit_search"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:imeOptions="actionDone"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="#000000"
+      android:textColorHint="@color/black"
+      android:textSize="16sp"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+      app:boxCornerRadiusTopStart="8dp" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <HorizontalScrollView
+    android:id="@+id/horizontal_chip_group"
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="15dp"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toTopOf="@+id/vertical_scroll_cards_layout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_input_search_layout">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/chip1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Спорт-бар" />
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/chip2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Диско-бар" />
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/chip3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Караоке-бар" />
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/chip4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Винный бар" />
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/chip5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Кофейный бар" />
+      </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+  </HorizontalScrollView>
+
+  <ScrollView
+    android:id="@+id/vertical_scroll_cards_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/horizontal_chip_group">
+
+    <LinearLayout
+      android:id="@+id/bar_cards_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="parent">
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="36dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+          android:id="@+id/relative_card_1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+            android:id="@+id/bar_photo_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bar_big" />
+
+          <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/bar_name_1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/bar_name_1"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/bar_adr_1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/adr_1"
+              android:textSize="14sp" />
+
+            <TextView
+              android:id="@+id/bar_time_1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/time_1"
+              android:textSize="14sp" />
+
+            <Button
+              android:id="@+id/book_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:text="@string/book_1"
+              android:textSize="9sp" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="36dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+          android:id="@+id/relative_card_2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+            android:id="@+id/bar_photo_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bar_2" />
+
+          <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/bar_name_2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/bar_name_1"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/bar_adr_2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/adr_1"
+              android:textSize="14sp" />
+
+            <TextView
+              android:id="@+id/bar_time_2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/time_1"
+              android:textSize="14sp" />
+
+            <Button
+              android:id="@+id/book_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:text="@string/book_1"
+              android:textSize="9sp" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>
+
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="36dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="36dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="36dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
