@@ -290,7 +290,6 @@
 
       </androidx.cardview.widget.CardView>
 
-
       <androidx.cardview.widget.CardView
         android:id="@+id/card3"
         android:layout_width="match_parent"
@@ -300,7 +299,70 @@
         app:cardCornerRadius="36dp"
         app:cardBackgroundColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+          android:id="@+id/relative_card_3"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+            android:id="@+id/bar_photo_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bar_1" />
+
+          <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/bar_name_3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/bar_name_1"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/bar_adr_3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/adr_1"
+              android:textSize="14sp" />
+
+            <TextView
+              android:id="@+id/bar_time_3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/time_1"
+              android:textSize="14sp" />
+
+            <Button
+              android:id="@+id/book_3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:text="@string/book_1"
+              android:textSize="9sp" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>
 
       <androidx.cardview.widget.CardView
         android:id="@+id/card4"
@@ -311,7 +373,9 @@
         app:cardCornerRadius="36dp"
         app:cardBackgroundColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+      </androidx.cardview.widget.CardView>
 
       <androidx.cardview.widget.CardView
         android:id="@+id/card5"
