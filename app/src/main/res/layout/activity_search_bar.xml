@@ -14,10 +14,8 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="25dp"
     android:layout_marginTop="24dp"
-    android:layout_marginEnd="207dp"
     android:text="@string/app_name"
     android:textSize="20sp"
-    app:layout_constraintEnd_toStartOf="@+id/personal_account_logo"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +29,6 @@
     android:scaleType="fitCenter"
     app:layout_constraintBottom_toTopOf="@+id/text_input_search_layout"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@+id/app_name_search_activity"
     app:layout_constraintTop_toTopOf="parent"
     app:srcCompat="@drawable/user" />
 
@@ -67,33 +64,18 @@
 
   </com.google.android.material.textfield.TextInputLayout>
 
-  <ImageView
-    android:id="@+id/more_button_search"
-    android:layout_width="45dp"
-    android:layout_height="45dp"
-    android:layout_marginStart="25dp"
-    android:layout_marginTop="15dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
-    android:scaleType="fitCenter"
-    app:layout_constraintBottom_toTopOf="@id/vertical_scroll_cards_layout"
-    app:layout_constraintEnd_toStartOf="@+id/horizontal_chip_group"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/text_input_search_layout"
-    app:srcCompat="@drawable/ic_baseline_more_24" />
-
   <HorizontalScrollView
     android:id="@+id/horizontal_chip_group"
     android:layout_width="0dp"
     android:layout_height="45dp"
-    android:layout_marginStart="15dp"
+    android:layout_marginStart="25dp"
     android:layout_marginTop="15dp"
     android:layout_marginEnd="25dp"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="15dp"
     android:scrollbars="none"
-    app:layout_constraintBottom_toTopOf="@id/vertical_scroll_cards_layout"
+    app:layout_constraintBottom_toTopOf="@+id/vertical_scroll_cards_layout"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@+id/more_button_search"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/text_input_search_layout">
 
     <LinearLayout
@@ -109,38 +91,38 @@
           android:id="@+id/chip1"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example1" />
+          android:text="Спорт-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip2"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example2" />
+          android:text="Диско-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example3" />
+          android:text="Караоке-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip4"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example4" />
+          android:text="Винный бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip5"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Example5" />
+          android:text="Кофейный бар" />
       </com.google.android.material.chip.ChipGroup>
     </LinearLayout>
   </HorizontalScrollView>
 
   <ScrollView
     android:id="@+id/vertical_scroll_cards_layout"
-    android:layout_width="0dp"
+    android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_marginStart="25dp"
     android:layout_marginEnd="25dp"
@@ -148,15 +130,12 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/horizontal_chip_group">
+    app:layout_constraintTop_toBottomOf="@+id/horizontal_chip_group">
 
     <LinearLayout
       android:id="@+id/bar_cards_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:layout_marginStart="25dp"
-      android:layout_marginEnd="25dp"
-      android:layout_marginBottom="5dp"
       android:orientation="vertical"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -167,6 +146,7 @@
         android:id="@+id/card1"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="@drawable/test_cat"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="36dp"
@@ -179,6 +159,7 @@
         android:id="@+id/card2"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="@drawable/test_cat"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="36dp"
@@ -189,6 +170,7 @@
         android:id="@+id/card3"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="@drawable/test_cat"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="36dp"
@@ -199,6 +181,18 @@
         android:id="@+id/card4"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="@drawable/test_cat"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/test_cat"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="36dp"
