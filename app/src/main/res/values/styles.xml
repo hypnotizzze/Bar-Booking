@@ -3,4 +3,10 @@
   <style name="CardViewStyleTest">
 
   </style>
+
+  <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+    <item name="chipBackgroundColor">@color/white</item>
+    <item name="android:textColor">@color/black</item>
+  </style>
+
 </resources>

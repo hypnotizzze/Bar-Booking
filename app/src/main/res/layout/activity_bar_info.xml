@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/purple_main_1"
+  tools:context=".BarInfoActivity">
+
+  <TextView
+    android:id="@+id/app_name_search_activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/app_name"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/personal_account_logo_info"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="30dp"
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toTopOf="@+id/linear_layout_bar_info"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/user" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linear_layout_bar_info"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="25dp"
+    android:background="@drawable/white_rounded_corners"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/personal_account_logo_info">
+
+    <TextView
+      android:id="@+id/bar_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="35dp"
+      android:fontFamily="@font/roboto_light"
+      android:text="@string/bar_name_1"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/bar_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="35dp"
+      android:layout_marginEnd="20dp"
+      android:text="@string/time_1"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/bar_book_button"
+      android:layout_width="wrap_content"
+      android:layout_height="46dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="20dp"
+      android:text="@string/book"
+      android:textColor="@color/button_personal_data_color"
+      android:textSize="9sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_time"
+      app:strokeColor="@color/button_personal_data_color"
+      app:strokeWidth="2dp" />
+
+    <TextView
+      android:id="@+id/bar_rating"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="20dp"
+      android:text="@string/bar_rating"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_name" />
+
+    <TextView
+      android:id="@+id/bar_adress"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="35dp"
+      android:maxLines="3"
+      android:text="@string/adr_1"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_rating" />
+
+    <TextView
+      android:id="@+id/bar_category"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="35dp"
+      android:maxLines="3"
+      android:text="@string/bar_category"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_adress" />
+
+    <TextView
+      android:id="@+id/bar_kitchen"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="35dp"
+      android:maxLines="3"
+      android:text="@string/bar_kitchen"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_category" />
+
+    <TextView
+      android:id="@+id/bar_description"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="35dp"
+      android:maxLines="5"
+      android:text="@string/bar_description"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_kitchen" />
+
+    <TextView
+      android:id="@+id/bar_phone"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="35dp"
+      android:text="@string/bar_phone"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_description" />
+
+    <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      app:cardCornerRadius="36dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bar_phone">
+
+      <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bar_big" />
+      />
+    </androidx.cardview.widget.CardView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

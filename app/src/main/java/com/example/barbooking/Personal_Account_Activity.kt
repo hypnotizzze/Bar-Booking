@@ -23,7 +23,7 @@ class Personal_Account_Activity : AppCompatActivity() {
 
     val nameInfo = "Василий"
     val surnameInfo = "Петров"
-    val phoneInfo = "88007775535"
+    val phoneInfo = "+79807775535"
 
     nameView = findViewById(R.id.personal_name_2)
     surnameView = findViewById(R.id.personal_surname_2)

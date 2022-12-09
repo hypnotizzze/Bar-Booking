@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_activity_window"
+    android:background="@color/purple_main_1"
     tools:context=".Personal_Account_Activity">
 
     <ImageView
@@ -42,103 +42,106 @@
             android:layout_gravity="center"
             android:columnCount="2">
 
-            <TextView
-                android:id="@+id/personal_name_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="15dp"
-                android:text="@string/name"
-                android:textSize="20sp" />
+          <TextView
+            android:id="@+id/personal_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/name"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+          <TextView
+            android:id="@+id/personal_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/personal_name_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="15dp"
-                android:textSize="20sp" />
+              android:id="@+id/personal_surname_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="15dp"
+              android:layout_marginTop="35dp"
+              android:layout_marginEnd="15dp"
+              android:text="@string/surname"
+              android:textStyle="bold"
+              android:textSize="17sp" />
+
+          <TextView
+            android:id="@+id/personal_surname_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/personal_surname_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="15dp"
-                android:text="@string/surname"
-                android:textSize="20sp" />
+              android:id="@+id/personal_phone_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="15dp"
+              android:layout_marginEnd="15dp"
+              android:layout_marginTop="35dp"
+              android:text="@string/login_string"
+              android:textStyle="bold"
+              android:textSize="17sp" />
 
-            <TextView
-                android:id="@+id/personal_surname_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="15dp"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/personal_phone_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="15dp"
-                android:text="@string/login_string"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/personal_phone_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="15dp"
-                android:textSize="20sp" />
+          <TextView
+            android:id="@+id/personal_phone_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="16sp" />
 
         </GridLayout>
 
-        <TextView
-            android:id="@+id/personal_edit_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/edit_profile"
-            android:textColor="@color/button_personal_data_color"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+      <TextView
+        android:id="@+id/personal_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/edit_profile"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/personal_change_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/change_password"
-            android:textColor="@color/button_personal_data_color"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+      <TextView
+        android:id="@+id/personal_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/change_password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/personal_exit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/exit"
-            android:textColor="@color/button_personal_data_color"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+      <TextView
+        android:id="@+id/personal_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     </LinearLayout>
 

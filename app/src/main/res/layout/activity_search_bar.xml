@@ -4,7 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="@color/purple_200"
+  android:background="@color/purple_main_1"
   tools:context=".Search_Bar_Activity">
 
 
@@ -91,30 +91,50 @@
           android:id="@+id/chip1"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:checkable="true"
+          android:clickable="true"
+          android:focusable="true"
+          app:chipBackgroundColor="@color/dull_green_1"
           android:text="Спорт-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip2"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:checkable="true"
+          android:clickable="true"
+          android:focusable="true"
+          app:chipBackgroundColor="@color/dull_green_1"
           android:text="Диско-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip3"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:checkable="true"
+          android:clickable="true"
+          android:focusable="true"
+          app:chipBackgroundColor="@color/dull_green_1"
           android:text="Караоке-бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip4"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:checkable="true"
+          android:clickable="true"
+          android:focusable="true"
+          app:chipBackgroundColor="@color/dull_green_1"
           android:text="Винный бар" />
 
         <com.google.android.material.chip.Chip
           android:id="@+id/chip5"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:checkable="true"
+          android:clickable="true"
+          android:focusable="true"
+          app:chipBackgroundColor="@color/dull_green_1"
           android:text="Кофейный бар" />
       </com.google.android.material.chip.ChipGroup>
     </LinearLayout>
@@ -207,7 +227,10 @@
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
               android:gravity="center"
-              android:text="@string/book_1"
+              android:textColor="@color/button_personal_data_color"
+              app:strokeColor="@color/button_personal_data_color"
+              app:strokeWidth="2dp"
+              android:text="@string/book"
               android:textSize="9sp" />
 
           </LinearLayout>
@@ -255,7 +278,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
-              android:text="@string/bar_name_1"
+              android:text="@string/bar_name_2"
               android:textSize="18sp"
               android:textStyle="bold" />
 
@@ -264,7 +287,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
-              android:text="@string/adr_1"
+              android:text="@string/adr_2"
               android:textSize="14sp" />
 
             <TextView
@@ -272,7 +295,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
-              android:text="@string/time_1"
+              android:text="@string/time_2"
               android:textSize="14sp" />
 
             <Button
@@ -281,7 +304,10 @@
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
               android:gravity="center"
-              android:text="@string/book_1"
+              android:text="@string/book"
+              android:textColor="@color/button_personal_data_color"
+              app:strokeColor="@color/button_personal_data_color"
+              app:strokeWidth="2dp"
               android:textSize="9sp" />
 
           </LinearLayout>
@@ -314,7 +340,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginEnd="150dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/bar_1" />
+            app:srcCompat="@drawable/bar_3" />
 
           <LinearLayout
             android:layout_width="130dp"
@@ -329,7 +355,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
-              android:text="@string/bar_name_1"
+              android:text="@string/bar_name_3"
               android:textSize="18sp"
               android:textStyle="bold" />
 
@@ -338,7 +364,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
-              android:text="@string/adr_1"
+              android:text="@string/adr_3"
               android:textSize="14sp" />
 
             <TextView
@@ -346,7 +372,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
-              android:text="@string/time_1"
+              android:text="@string/time_3"
               android:textSize="14sp" />
 
             <Button
@@ -355,7 +381,10 @@
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp"
               android:gravity="center"
-              android:text="@string/book_1"
+              android:text="@string/book"
+              android:textColor="@color/button_personal_data_color"
+              app:strokeColor="@color/button_personal_data_color"
+              app:strokeWidth="2dp"
               android:textSize="9sp" />
 
           </LinearLayout>
@@ -375,6 +404,70 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <RelativeLayout
+          android:id="@+id/relative_card_4"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+            android:id="@+id/bar_photo_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bar_4" />
+
+          <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/bar_name_4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/bar_name_4"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/bar_adr_4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/adr_4"
+              android:textSize="14sp" />
+
+            <TextView
+              android:id="@+id/bar_time_4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/time_4"
+              android:textSize="14sp" />
+
+            <Button
+              android:id="@+id/book_4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:text="@string/book"
+              android:textColor="@color/button_personal_data_color"
+              app:strokeColor="@color/button_personal_data_color"
+              app:strokeWidth="2dp"
+              android:textSize="9sp" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
       </androidx.cardview.widget.CardView>
 
       <androidx.cardview.widget.CardView
@@ -386,7 +479,73 @@
         app:cardCornerRadius="36dp"
         app:cardBackgroundColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+          android:id="@+id/relative_card_5"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+            android:id="@+id/bar_photo_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bar_5" />
+
+          <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/bar_name_5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/bar_name_5"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/bar_adr_5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/adr_5"
+              android:textSize="14sp" />
+
+            <TextView
+              android:id="@+id/bar_time_5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="@string/time_5"
+              android:textSize="14sp" />
+
+            <Button
+              android:id="@+id/book_5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:gravity="center"
+              android:text="@string/book"
+              android:textColor="@color/button_personal_data_color"
+              app:strokeColor="@color/button_personal_data_color"
+              app:strokeWidth="2dp"
+              android:textSize="9sp" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
